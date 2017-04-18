@@ -1,7 +1,9 @@
 package test.java.testScripts;
 
+import main.java.customListeners.Retry;
 import main.java.testBase.TestBase;
 import main.java.testUtills.Utills;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
@@ -14,12 +16,14 @@ public class HomePage  extends TestBase {
 
     @BeforeClass
     public void setUp() throws IOException {
-        super.setUp();
+       super.setUp();
     }
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void login() throws IOException {
     Utills.takeScreenshot("homepage");
+    Assert.assertTrue(2<1);
+    System.out.println("done!");
     }
 
     @AfterClass

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.java.testScripts.HomePage">
+        <methods>
+          <include name="login"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.java.testScripts.HomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
