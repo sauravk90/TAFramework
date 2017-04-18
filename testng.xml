@@ -3,7 +3,7 @@
     <test name="Test">
 
         <classes>
-            <class name="testScripts.HomePage"/>
+            <class name="test.java.testScripts.HomePage"/>
         </classes>
 
     </test>
