@@ -70,7 +70,8 @@ public class TestBase {
     }
 
     private static void initializeChrome() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\saurav.kumar\\Desktop\\Site\\Drivers\\chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver", "C:\\Users\\saurav.kumar\\Desktop\\Site\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//src//main//java//drivers//chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("test-type");
         options.addArguments("chrome.switches", "--disable-extensions");

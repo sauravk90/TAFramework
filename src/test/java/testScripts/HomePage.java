@@ -22,8 +22,7 @@ public class HomePage  extends TestBase {
     @Test(retryAnalyzer = Retry.class)
     public void login() throws IOException {
     Utills.takeScreenshot("homepage");
-    Assert.assertTrue(2<1);
-    System.out.println("done!");
+
     }
 
     @AfterClass

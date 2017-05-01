@@ -12,8 +12,8 @@ public class Retry implements IRetryAnalyzer {
     public boolean retry(ITestResult result) {
         if(minretryCount<=maxretryCount)
         {
-            System.out.println("Following test is failing====" + result.getName());
-            System.out.println("Retrying the test Count is=== " + (minretryCount+1));
+            System.out.println("Following test is failing ====" + result.getName());
+            System.out.println("Retrying the test Count is === " + (minretryCount+1));
             minretryCount++;
 
             return true;
